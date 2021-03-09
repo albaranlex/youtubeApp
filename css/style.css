@@ -8,50 +8,39 @@ body {
 }
 
 /* GRID */
-.container {
+.main-container {
   display: grid;
   height: 100vh;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 1fr 5fr 5fr 5fr 5fr 5fr;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 10% 90%;
   grid-template-areas:
-    "box1 box2 box3"
-    "box4 box5 box5"
-    "box6 box7 box7"
-    "box6 box7 box7"
-    "box6 box8 box8"
-    ". . .";
+  "b1 b1"
+  "b2 b3"
+  ;
 }
 
-.box1 {
-  grid-area: box1;
+.top-container {
+  grid-area: b1;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
 }
 
-.box2 {
-  grid-area: box2;
+.left-container {
+  grid-area: b2;
 }
 
-.box3 {
-  grid-area: box3;
-}
+.right-container {
+  grid-area: b3;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 
-.box4 {
-  grid-area: box4;
-}
-
-.box5 {
-  grid-area: box5;
-}
-
-.box6 {
-  grid-area: box6;
 }
 
 /* END OF GRID */
 
 .box1,
 .box2,
-.box3,
-.box4 {
+.box3 {
   background-color: #212121;
   height: 50px;
 }
@@ -124,27 +113,7 @@ input:focus {
   transform: translate(10px, 80%);
 }
 
-.box4 {
-  height: 200px;
-  background-color: #212121;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  color: white;
-  padding-top: 20px;
-  border-bottom: 1px gray solid;
+.box6 img {
+  width: 200px;
 }
 
-.box4 i,
-.box6 i {
-  padding: 0px;
-  margin: 10px;
-  color: #909090;
-}
-
-.box6 {
-  background-color: #212121;
-}
-.box5 img {
-  width: 100%;
-}
