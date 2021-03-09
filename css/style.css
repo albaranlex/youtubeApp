@@ -81,7 +81,20 @@ input:focus {
   transform: translate(10px, 30%);
 }
 
+.box4 {
+  display: flex;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.box4 .leftnav-icon {
+  color: white;
+}
+
 .main-container {
+  background-color: honeydew;
   display: grid;
+  height: 100vh;
   grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 1fr 1fr 1fr;
 }
