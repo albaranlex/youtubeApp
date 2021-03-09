@@ -1,0 +1,55 @@
+@import url(../font/css/all.css);
+
+body {
+  background-color: #101010;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+div {
+  border: 1px blue solid;
+}
+
+.header-icon {
+  color: white;
+}
+
+/* GRID */
+
+.main-container {
+  border: 2px red solid;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "b1 b2 b3"
+    "b4 b5 b6";
+}
+.header-left {
+  grid-area: b1;
+  display: flex;
+}
+
+.header-middle {
+  grid-area: b2;
+  display: flex;
+}
+
+.header-right {
+  grid-area: b3;
+  display: flex;
+}
+
+.left-nav-top {
+  grid-area: b4;
+}
+
+.banner {
+  grid-area: b5;
+  column: 2/4;
+}
+
+.left-nav-middle1 {
+  grid-area: b6;
+}
