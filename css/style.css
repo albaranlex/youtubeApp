@@ -37,10 +37,31 @@ body {
 }
 
 .box8 {
+  width: 100%;
   display: grid;
-  grid-template-columns: 10% 30% 10% 40% 10%;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100px 300px 100px 40px 100px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "b8a b8b b8c . b8e"
+  "b8a b8d b8c . b8e"
+  "b8a . . ."
+}
 
+.b8a {
+  grid-area: b8a;
+}
+
+.b8b {
+  grid-area: b8b;
+}
+.b8c {
+  grid-area: b8c;
+}
+.b8d {
+  grid-area: b8d;
+}
+.b8e{
+  grid-area: b8e;
 }
 
 /* END OF GRID */
@@ -154,4 +175,19 @@ input:focus {
 }
 .box7 img {
   width: 100%;
+}
+
+.box8 {
+  margin: 20px 0;
+  margin-left: 50px;
+  display: flex;
+}
+
+.box8 img {
+  width: 100px;
+  height: 100px;
+}
+
+.box8 nav {
+  display: flex;
 }
