@@ -7,12 +7,55 @@ body {
   color: white;
 }
 
+/* GRID */
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 1fr 5fr 5fr 5fr 5fr 5fr;
+  grid-template-areas:
+    "box1 box2 box3"
+    "box4 box5 box5"
+    "box6 box7 box7"
+    "box6 box7 box7"
+    "box6 box8 box8"
+    ". . .";
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+/* END OF GRID */
+
 .box1,
 .box2,
-.box3 {
+.box3,
+.box4 {
   background-color: #212121;
   height: 50px;
 }
+
 .box1 {
   display: flex;
   justify-content: flex-start;
@@ -78,23 +121,30 @@ input:focus {
   height: 30px;
   width: 25px;
   border-radius: 50%;
-  transform: translate(10px, 30%);
+  transform: translate(10px, 80%);
 }
 
 .box4 {
+  height: 200px;
+  background-color: #212121;
   display: flex;
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.box4 .leftnav-icon {
+  justify-content: flex-start;
+  flex-direction: column;
   color: white;
+  padding-top: 20px;
+  border-bottom: 1px gray solid;
 }
 
-.main-container {
-  background-color: honeydew;
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 20% 60% 20%;
-  grid-template-rows: 1fr 1fr 1fr;
+.box4 i,
+.box6 i {
+  padding: 0px;
+  margin: 10px;
+  color: #909090;
+}
+
+.box6 {
+  background-color: #212121;
+}
+.box5 img {
+  width: 100%;
 }
