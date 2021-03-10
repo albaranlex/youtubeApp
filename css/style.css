@@ -140,7 +140,26 @@ input:focus {
   width: 1250px;
   margin: none;
   padding: none;
+  z-index: 0;
 }
+
+.social-media {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 20px;
+  padding: 20px;
+  background-color:rgba(0, 0, 0, 0.3); 
+  z-index: 1;
+  transform: translate(410%, -120%);
+}
+
+.social-media a {
+  color: white;
+}
+
 
 .box8 {
   width: 1150px;
@@ -159,7 +178,6 @@ input:focus {
   width: 100px;
   padding: 10px;
   margin: 10px;
-
 }
 
 .box8 h2 {
@@ -170,18 +188,10 @@ input:focus {
   font-size: 15px;
   color: gray;
 }
-
-button > span {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-
 .box9 {
   background-color: #191919;
-  height: 50px;
-
+  height: 30px;
+  width: 1250px;
 }
 .box9 nav {
   display: flex;
@@ -191,17 +201,24 @@ button > span {
   margin-left: 150px;;
   color: grey;
   font-size: 13px; 
-
+  width: 1000px;
 }
 
 .box9 li:hover {
   text-decoration: underline;
   color: white;
+  cursor: pointer;
+}
+
+.box9 .active {
+  border-bottom: white;
+  color: white;
+  font-weight: 500;
 }
 
 .box10 {
-  margin-top: 30px;
   margin-left: 100px;
+  margin-top: 30px;
   color: gray;
   font-size: 13px;
 }
@@ -210,8 +227,8 @@ button > span {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  margin-left: 100px;
   margin-top: 20px;
+  margin-left: 100px;
   padding-right: 100px;
 }
 
@@ -232,9 +249,6 @@ button > span {
   overflow: hidden;
   width: 190px; 
   height: 2.5em; 
-
-
-
 }
 
 .box11 h5 {
