@@ -180,7 +180,7 @@ button > span {
 
 .box9 {
   background-color: #191919;
-  height: 30px;
+  height: 50px;
 
 }
 .box9 nav {
@@ -200,7 +200,42 @@ button > span {
 }
 
 .box10 {
+  margin-top: 30px;
   margin-left: 100px;
   color: gray;
   font-size: 13px;
+}
+
+.box11 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-left: 100px;
+  margin-top: 20px;
+  padding-right: 100px;
+}
+
+.box11 div {
+  width: fit-content;
+}
+
+.box11 img {
+  width: 185px;
+  height: 110px;
+}
+
+.box11 p {
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  width: 190px;
+
+
+}
+
+.box11 h5 {
+  margin-top: -10px;
+  font-size: 12px;
+  color: gray;
+  font-weight: 300;
 }
