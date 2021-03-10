@@ -136,6 +136,10 @@ input:focus {
 .right-container {
   overflow-y: auto;
 }
+
+.box7 {
+  height: 320px;
+}
 .box7 img {
   width: 1250px;
   margin: none;
@@ -159,7 +163,6 @@ input:focus {
 .social-media a {
   color: white;
 }
-
 
 .box8 {
   width: 1150px;
