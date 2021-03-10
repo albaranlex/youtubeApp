@@ -7,7 +7,7 @@ body {
   color: white;
 }
 
-/* GRID */
+/* MAIN GRID */
 .main-container {
   display: grid;
   height: 100vh;
@@ -15,8 +15,7 @@ body {
   grid-template-rows: 5% 95%;
   grid-template-areas:
   "b1 b1"
-  "b2 b3"
-  ;
+  "b2 b3";
 }
 
 .top-container {
@@ -37,20 +36,18 @@ body {
 
 }
 
-
-/* END OF GRID */
-
 /* Formatting */ 
-
 /* gray bg inside windows */
 .top-container, .left-container {
   background-color: #212121;
 }
 
+/* TOP CONTAINER */ 
 .box1, .box2, .box3 {
   height: 40px;
 }
 
+/* uppermost left box */
 .box1 {
   display: flex;
   justify-content: flex-start;
@@ -67,6 +64,7 @@ body {
   height: 20px;
 }
 
+/*uppermost-middle box */
 .box2 {
   display: flex;
   justify-content: center;
@@ -95,12 +93,15 @@ input:focus {
   width: 70px;
 }
 
+/* uppermost right box */
+
 .box3 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
+/* LOWER LEFT CONTAINER */ 
 .left-container {
   overflow-y: auto;
 }
@@ -133,10 +134,12 @@ input:focus {
   font-size: 13px;
 }
 
+/* RIGHT CONTAINER - Contents (banner, videos, etc) */
 .right-container {
   overflow-y: auto;
 }
 
+/* banner */
 .box7 {
   height: 320px;
 }
@@ -147,6 +150,7 @@ input:focus {
   z-index: 0;
 }
 
+/* social media div */
 .social-media {
   position: static;
   display: flex;
@@ -164,6 +168,7 @@ input:focus {
   color: white;
 }
 
+/* artists details */
 .box8 {
   width: 1150px;
   background-color: #191919;
@@ -191,6 +196,8 @@ input:focus {
   font-size: 15px;
   color: gray;
 }
+
+/* nav bar */
 .box9 {
   background-color: #191919;
   height: 30px;
@@ -211,14 +218,10 @@ input:focus {
   text-decoration: underline;
   color: white;
   cursor: pointer;
+
 }
 
-.box9 .active {
-  border-bottom: white;
-  color: white;
-  font-weight: 500;
-}
-
+/* video header */ 
 .box10 {
   margin-left: 100px;
   margin-top: 30px;
@@ -226,6 +229,7 @@ input:focus {
   font-size: 13px;
 }
 
+/* videos */
 .box11 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
