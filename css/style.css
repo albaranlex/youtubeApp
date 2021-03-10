@@ -32,7 +32,8 @@ body {
 .right-container {
   grid-area: b3;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 3fr 2fr 1fr 1fr 4fr;
+  height: 100vh;
 
 }
 
@@ -136,41 +137,52 @@ input:focus {
   overflow-y: auto;
 }
 .box7 img {
-  width: 100%;
+  width: 1250px;
+  margin: none;
+  padding: none;
 }
 
 .box8 {
-  width: 90%;
-  border: 1px solid blue;
+  width: 1150px;
+  background-color: #191919;
   display: grid;
+  margin: none;
+  padding: none;
   padding-left: 100px;
-  grid-template-columns: 10% 30% 45% 15%;
+  grid-template-columns: 1fr 2fr 4fr;
 }
 
-.box8 div {
-  border: 1px solid red;
-}
 
-.b8a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.b8b {
-  font-size: 25px;
-  font-weight: 400;
-}
 .box8 img {
-  width: 100px;
+  grid-column: 1/2;
+  grid-row: 1/4;
   height: 100px;
-  padding: 20px;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+
 }
 
-.b8b {
-  grid-column: 2/3;
-  grid-row: 1/4;
+.box8 h2 {
+  padding-top: 20px;
 }
+.box8 p {
+  margin-top: -15px;
+  font-size: 15px;
+  color: gray;
+}
+
+button > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+
+
+
+
 
 .box9 {
   margin: 20px 50px;
